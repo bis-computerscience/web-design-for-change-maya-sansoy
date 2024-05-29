@@ -1,0 +1,589 @@
+/* FONTS (fontface) */
+
+@font-face {
+    font-family: 'narnia';
+    src: url(fonts/narnia.ttf);
+    font-style:normal;
+}
+
+@font-face {
+    font-family: 'tangoSans';
+    src: url(fonts/tangosans/TangoSans.ttf);
+    font-style:normal;
+}
+
+@font-face {
+    font-family: 'tangoSans';
+    src: url(fonts/tangosans/TangoSans_Italic.ttf);
+    font-style:italic;
+}
+
+@font-face {
+    font-family: 'tangoSans';
+    src: url(fonts/tangosans/TangoSans_Bold.ttf);
+    font-style:bold;
+}
+
+body {
+    margin:0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    margin: 0%;
+}
+
+li {
+    padding-left: 1.3vw;
+    padding-bottom:2vh;
+}
+
+/* POPUP MENU STYLES */
+.popup-content {
+
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    position: fixed;
+    z-index: 1000;
+
+    height: 80vh;
+    width: 80vw;
+    
+
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+
+    background: #2da7a2;
+
+}
+
+.popup {
+    visibility:hidden;
+    opacity: 0%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    position: fixed;
+
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    padding:0;
+
+    background: rgba(1, 19, 21, 0.55);
+
+    transition: opacity 0.68s;
+    
+}
+
+.menu-link {
+    font-family: tangoSans;
+    font-size: 130%;
+    color:rgb(245, 203, 198);
+    margin-bottom: 2%;
+    font-style: normal;
+    text-decoration: none;
+
+    transition: color 0.3s ease-in-out, box-shadow 0.8s ease-in-out;
+
+}
+
+.menu-link:hover {
+    color: #2da7a2;
+    /* background-color: rgb(245, 211, 208); */
+    box-shadow: inset 400px 0 0 0 rgb(245, 211, 208);
+
+}
+
+.button {
+    position: fixed;
+    height: 7vh;
+    width:7vh;
+    margin-right: 3%;
+    margin-top:3%;
+    align-self: flex-end;
+
+}
+
+.button:hover {
+    cursor: pointer;
+
+}
+
+.buttonopen:hover {
+    cursor: pointer;
+
+}
+
+.button img {
+    height:100%;
+    width:100%;
+}
+
+.button-container {
+    position: fixed;
+    display: flex;
+    height:5vh;
+    width: 100vw;
+    z-index: 979;
+    margin-top: 3%;
+
+    justify-content: flex-end;
+    justify-self: flex-start;
+}
+
+.buttonopen {
+    
+    position: absolute;
+    height: 7vh;
+    width:7vh;
+    margin-right: 3%;
+    margin-top:3%;
+    align-self: flex-end;
+    z-index: 980;
+    float:right;
+
+}
+
+
+.buttonopen img {
+    height:100%;
+    width:100%;
+}
+
+
+/* HEADERS AND FONT STYLES */
+
+.subtitle2 {
+    font-family: tangoSans;
+    font-style: bold;
+    padding: 20px;
+}
+
+p {
+    font-family: tangoSans;
+    font-style: italic;
+    font-size: 90%;
+    color: #ec6f4f;
+}
+
+h2 {
+    font-size: 300%;
+    font-family: narnia;
+    color:#c63434;
+    padding-left: 10vw;
+}
+
+.title-text {
+    font-size: 90px;
+    font-family: narnia;
+}
+
+.main-title {
+    position: absolute;
+}
+
+.subtitle1 {
+    font-size: 25px;
+    font-family: tangoSans;
+    font-style: bold;
+    color: rgb(245, 203, 198);
+}
+
+.quotediv {
+    display: flex;
+    background-color: #2da7a2;
+    padding: 5vh;
+    align-items: center;
+    
+}
+
+.explore-link {
+    font-size: 25px;
+    font-family: tangoSans;
+    font-style: italic;
+    color: rgb(245, 211, 208);
+    margin-bottom: 10px;
+    margin-top:20px;
+    text-decoration: none;
+    
+}
+
+
+/* FOOTER DIV STYLES */
+
+.footerlink {
+    padding: 0;
+    margin: 0;
+    color:#ec6f4f;
+    font-family: tangoSans;
+    font-style: italic;
+}
+.footerlink:hover{
+    color:#eaac8c;
+}
+
+.footerdiv {
+    display: flex;
+    align-items: center;
+    
+    height: 10%;
+    background:#ec6f4f;
+}
+
+.footerdiv2 {
+    display: flex;
+    height: 30%;
+    background: #c63434;
+    color:#ec6f4f;
+}
+
+.footerlink {
+    padding-top: 0%;
+}
+
+/* SPECIAL DIVS */
+
+.quote {
+    font-family: tangoSans;
+    font-size: 200%;
+    font-style: italic;
+
+    text-align: center;
+    /* padding-top: 6.5%; */
+    padding-left: 6%;
+    padding-right: 6%;
+    color:rgb(245, 203, 198);
+
+}
+
+
+
+
+/* section 1 (hero) */
+.hero-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* background color: video is positioned behind the background, so if the rgba value has an oppacity of less than 1 the visiblity of the video will depend on how transparent the bg is*/
+    background: rgba(1, 19, 21, 0.45);
+    color: rgb(245, 203, 198);
+    margin-bottom: 0px;
+    min-height: 100vh;
+
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.arrow {
+    position: relative;
+    margin-top: 530px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* PHOTOS, VIDEOS AND MUSIC STYLES */
+.photolist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+    background: rgb(245, 211, 208);
+}
+
+.photo {
+    display: flex;
+    height: 40vh;
+    width: 20vw;
+    margin-right: 2vw;    
+    margin-left: 2vw;
+    overflow: hidden;
+    object-fit:cover;
+    border-color: #2da7a2;
+    border-style:solid;
+    border-width: 1vh;
+
+}
+
+.video-bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+
+    height: 100vh;
+    width: 177.77777778vh; /* 100 * 16 / 9 */
+    min-width: 100vw;
+    min-height: 56.25vw; /* 100 * 9 / 16 */
+
+    margin-bottom: 0px;
+    object-fit:cover;
+    
+}
+
+.bgmusic {
+    position: absolute;
+    left: 1%;
+    top: 2%;
+    padding: 0px;
+    opacity: 20%;
+    transition: opacity 0.55s;   
+}
+
+.bgmusic:hover {
+    transition: opacity 0.7s;
+    opacity: 80%;
+
+}
+
+
+/* section 2  */
+.container1 {
+    display: flex;
+    height: 65%; 
+    margin-top: 0px;
+    text-align:center;
+
+}
+
+.paragraph1 {
+    flex-shrink: 1;
+    flex-grow: 1;
+    width: 50%;
+}
+
+.paragraph1.alignleft {
+    padding-right: 15%;
+    text-align: left;
+}
+
+.paragraph1.alignright {
+    padding-left: 15%;
+    text-align: right;
+}
+
+
+
+
+/* WHATS THE PROBLEM PAGE STYLES */
+.hero {
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    height: 80vh;
+    width: 100vw;
+    background:#2da7a2;
+    padding: 0;
+    margin:0;
+}
+
+.header-container {
+    display: flex;
+    position: absolute;
+
+    margin-left: 10%;
+    height: 40vh;
+    width: 30vw;
+    margin-top: 0%;
+
+
+    background: rgba(34, 130, 137, 0.765);
+    
+}
+
+.header {
+    display: flex;
+    align-self: center;
+
+    font-size: 500%;
+    font-family:narnia;
+    margin-left: -10%;
+    color: rgb(245, 203, 198);
+     
+}
+
+.img {
+    align-self: center;
+    position: absolute;
+    right: 13vw;
+    background:  #2da7a2;
+    
+    
+    border-color: #ec6f4f;
+    border-style:solid;
+    border-width: 1vh;
+
+
+
+    width: 35vw;
+    height: 40vh;
+    
+    overflow: hidden;
+
+}
+
+.graphics {
+    display:flex;
+    justify-content: space-evenly;
+   
+    height: 20vh;
+    width: 70vw;
+    position: absolute;
+    right: 0;
+    bottom: 20vh;
+
+   
+}
+
+.graphic {
+    width:20vh;
+    height: 20vh;
+
+}
+
+
+.sectiontype1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+
+
+    height: 75vh;
+    width: 100vw;
+}
+
+.sectiontype1text {
+    display: flex;
+   
+    flex-direction: column;
+
+    width: 30vw;
+    height: 65vh;
+    /* background: rgb(238, 235, 232); */
+}
+
+.image-carousel {
+    display: flex;
+    overflow: hidden;
+
+    height: 65vh;
+    width: 45vw;
+    margin-left: 5vw;
+    border-style:solid;
+    border-color:#2da7a2;
+    border-width: 5%;
+    /* background:cornflowerblue ; */
+}
+
+/* HOW CAN YOU HELP PAGE STYLES */
+
+.bullet-container {
+    display:flex;
+    justify-content:space-evenly;
+
+    width: 70vw;
+    height: 63vh;
+    
+
+    /* background-color:#37eb00 */
+}
+
+
+.bullet-list {
+    width: 21vw;
+    height: 70vh;
+    /* padding-top: 1vh */
+
+
+    /* background-color: #ff0d82 */
+}
+
+.content-bullet {
+    font-family: tangoSans;
+    font-size: 80%;
+
+    padding-left: 0.4vw;
+
+    color:#2da7a2;
+
+}
+
+.boxlink {
+    font-family: tangoSans;
+    color:#eaac8c;
+    text-decoration: none;
+}
+
+.boxlink:hover {
+    color: #af2c2c;
+    text-decoration:underline;
+
+}
+
+.linkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: absolute; */
+    background-color: #ec6f4f; 
+    height: 10vh; 
+    width:30vh;
+    text-align: center;
+}
+
+.linkbox:hover {
+    background-color: #dd5841; 
+}
+
+
+/* SNAKE GAME CSS STYLES*/
+#snake-game-container {
+    height: 90vh; 
+    display:flex; 
+    align-items: center; 
+    justify-content: center;
+
+    font-family: "VT323", monospace;
+    background: rgb(245, 211, 208);
+}
+
+
+#game-board {
+    border-radius: 100px;
+    display: grid;
+    grid-template-columns: repeat(20, 20px);
+    grid-template-rows: repeat(20,20px);
+    margin: 5px;
+}
+
+.game-border-1 {
+    border: #2da7a2 solid 10px;
+    border-radius: 30px;
+    box-shadow: inset 0 0 0 10px #2da7a2;
+}
+
+.game-border-2 {
+    border: #75bfbc solid 8px;
+    border-radius: 26px;
+    box-shadow: inset 0 0 0 10px #75bfbc;
+}
+
+.game-border-3 {
+    border: #5cb0af solid 30px;
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 5px #5cb0af;
+}

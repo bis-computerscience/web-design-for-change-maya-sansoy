@@ -1,0 +1,130 @@
+<html> 
+<head>
+
+    <title> Coral Reefs </title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+
+</head>
+
+<body style = "margin:0; background-color: rgb(243, 217, 206)">
+
+    <div class="button-container">
+        <div class="buttonopen" onclick="buttonFunction()">
+            <img src = "assets/graphics/openbutton.png">
+        </div>
+    </div>
+
+
+    <div class="hero-main">
+       
+        <audio loop controls autoplay class="bgmusic">
+            <source src="assets/music/backgroundmusiccoral2.mp3" type="audio/mp3">
+            <p> Your browser does not support the audio element. </p>
+        </audio>
+
+    
+
+        <div class="popup" id="hiddenmenu">
+            <div class="popup-content"> 
+
+                <div class="button" onclick="buttonCloseFunction()" >
+                    <img src = "assets/graphics/quitbutton.png">
+                </div>
+
+                <h1 style = "font-size: 500%;font-family:narnia;margin-bottom:0%;margin-top:7%"> MENU </h1>
+
+                <hr style="width:30%;color:rgb(245, 203, 198);height:5px;background-color: rgb(245, 203, 198);border-style: none;">
+
+                <h3> <a class="menu-link" href="index.html"> Home (about us)</a> </h3>
+                
+                <h3> <a class="menu-link" href="whats-the-problem.html"> Whats the Problem? </a> </h3>
+
+                <h3> <a class="menu-link" href="how-can-you-help.html"> How can you help? </a> </h3>
+
+                <h3> <a class="menu-link" href="games.html"> Games </a> </h3>
+
+            </div>
+        </div>
+        
+        <div class="main-title">
+            <h1 class="title-text" style = "margin-bottom: 10px; margin-top: 10px;" > World of CORAL </h1>
+            <p class="subtitle1"> dive into the world of our dying reefs</p>
+
+            <hr style="width:50%;color:rgb(245, 203, 198);height:5px;background-color: rgb(245, 203, 198);border-style: none;">
+        </div>
+
+        <div class="arrow">
+            <a href="#section1" class="explore-link"> explore </a>
+            <a href="#section1"><img id="explore-arrow" src="assets/graphics/arrow.png" style = "max-height: 25px;"></a>
+        </div>
+
+        <video autoplay muted loop class="video-bg" poster="assets/videos/poster-bgvideo.png">
+            <source src="assets/videos/homepagevideo01.1920x1080.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="container1" id="section1">
+        <div class="paragraph1 alignright"> 
+            <h1 class="subtitle2" style="padding-top: 20%;padding-right: 0px;font-size: 250%;color: #2da7a2;"> What do we do? </h1>
+            <p> Our aim is to raise awareness about the ever-increasing dangers corals face, and how this specifically affects us as a species.</p>
+            <p> We hope to inspire our audience to take action against this issue.</p>
+        </div>
+
+        <img src="assets/images/coralreefplaceholdercircle.png" style="height: 20vw;padding:4%;padding-top: 8%;">
+
+        <div class="paragraph1 alignleft">
+            <h1 class="subtitle2" style="padding-top: 20%;padding-left:0px;font-size: 250%;color: #2da7a2;"> What's on our site?</h1>
+            <p> On our website you will find pages of information about the dangers reefs face.</p>
+            <p> We also include games and quizes as a fun and engaging way for our audience to assess their knowledge on the topic.</p>
+
+
+        </div>
+
+    </div>
+
+    <div class="quotediv" style = "height: 40%"> 
+            
+        <h1 class="quote"> " <span style = "color:#b1d28f" >Coral reefs </span>represent some of the world's most spectacular beauty spots, but they are also the <span style = "color: #b1d28f">foundation of marine life </span>: without them many of the sea's most exquisite species will not survive. "</h1>
+
+    </div>
+
+    <div class="photolist">
+
+        <div class="photo" style = "background:#1fa142;border-color: #b1d28f;"> 
+            <img src="assets/images/homepicture1.jpeg" style="opacity: 70%;">
+        </div>
+
+        <div class="photo" style = "background: #1fa142;"> 
+            <img src="assets/images/homepicture2.jpeg" style="opacity: 70%;">
+        </div>
+            
+        <div class="photo" style = "background: #1fa142;border-color: #ec6f4f;"> 
+            <img src="assets/images/homepicture3.jpeg" style="opacity: 70%;">
+        </div>
+
+    </div>
+
+    <div class="footerdiv">
+
+        <h2 style="padding-top: 1.7vh"> Links </h2>
+
+    </div>
+    
+    <div class="footerdiv2">
+
+        <div class="footertext"> 
+            <h1 class="subtitle2" style = "font-size: 150%; color: #ec6f4f; padding-left: 10vw; padding-top: 2.vh; padding-bottom: 0vw"> BIS school links:</h1>
+
+            <ul style="padding-left: 10vw">
+                <li class="footerlink"> <a class="footerlink" href="https://www.bis-school.com/"> BIS school website</li>
+                <li class="footerlink"> <a class="footerlink" href="https://www.instagram.com/bavarian_international_school/?hl=en"> Instagram</li>
+            </ul>
+        </div>
+
+    </div>
+    
+
+</body>
+
+</html>

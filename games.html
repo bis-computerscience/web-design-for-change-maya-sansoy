@@ -1,0 +1,105 @@
+<html>
+<head>
+    <title> Games </title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"> </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+</head>
+<body style = "background-color: rgb(243, 217, 206)">
+
+    <div class="button-container">
+        <div class="buttonopen" onclick="buttonFunction()">
+            <img src = "assets/graphics/openbutton.png">
+        </div>
+    </div>
+
+    <div class="hero">
+
+        <audio loop controls autoplay class="bgmusic">
+            <source src="assets/music/backgroundmusiccoral2.mp3" type="audio/mp3">
+            <p> Your browser does not support the audio element. </p>
+        </audio>
+
+
+        <div class="popup" id="hiddenmenu">
+            <div class="popup-content"> 
+
+                <div class="button" onclick="buttonCloseFunction()" >
+                    <img src = "assets/graphics/quitbutton.png">
+                </div>
+
+                <h1 style="font-size: 500%;color:rgb(245, 203, 198);font-family:narnia;margin-bottom:0%;margin-top:7%;"> MENU </h1>
+
+                <h1 style="width:30%;color:rgb(245, 203, 198);height:5px;background-color: rgb(245, 203, 198);border-style: none;"> </h1>
+
+                <h3> <a class="menu-link" href="index.html"> Home (about us)</a> </h3>
+                
+                <h3> <a class="menu-link" href="whats-the-problem.html"> Whats the Problem? </a> </h3>
+
+                <h3> <a class="menu-link" href="how-can-you-help.html"> How can you help? </a> </h3>
+
+                <h3> <a class="menu-link" href="games.html"> Games </a> </h3>
+
+            </div>
+        </div>
+
+        <div class="header-container">
+            <h1 class="header"> GAMES</h1>
+        </div>
+    </div>
+
+<!-- SNAKE GAME -->
+
+    <div id="snake-game-container">
+
+        <div id="scores">
+            <h1 id="score">000</h1>
+            <h1 id="high-score">000</h1>
+        </div>
+        <div class="game-border-1">
+            <div class="game-border-2">
+                <div class="game-border-3">
+                    <div id="game-board">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <h1 id="instruction-text">Press 'space' to start the game</h1>
+        <img src="assets/game-assets/snake-logo2.png" alt="snake logo" style="width:"> -->
+
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+<!-- FOOTER -->
+    <div class="footerdiv">
+
+        <h2 style="padding-top: 1.7vh"> Links </h2>
+
+    </div>
+
+    <div class="footerdiv2">
+
+        <div class="footertext"> 
+            <h1 class="subtitle2" style = "font-size: 150%; color: #ec6f4f; padding-left: 10vw; padding-top: 2.vh; padding-bottom: 0vw"> BIS school links:</h1>
+
+            <ul style="padding-left: 10vw">
+                <li class="footerlink"> <a class="footerlink" href="https://www.bis-school.com/"> BIS school website</li>
+                <li class="footerlink"> <a class="footerlink" href="https://www.instagram.com/bavarian_international_school/?hl=en"> Instagram</li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+
+</html>
