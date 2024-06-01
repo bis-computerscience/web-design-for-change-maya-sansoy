@@ -97,9 +97,21 @@ function drawFood() {
 
 //generate food
 function generateFood() {
-    const x = Math.floor(Math.random() * gridSize) + 1;
-    const y = Math.floor(Math.random() * gridSize) + 1;
-    return {x, y};
+    while (true) {
+        x = Math.floor(Math.random() * gridSize) + 1;
+        y = Math.floor(Math.random() * gridSize) + 1;
+
+        if (snake.every((segment) => {
+            if (segment.x === x && segment.y === y) {
+            
+                return false;
+            }
+            return true;
+        })) {
+            return {x, y};
+        }
+    }
+    
 }
 
 //move snake
